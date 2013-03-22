@@ -14,5 +14,17 @@ b::route('install', function(){
 });
 
 b::route('download', function(){
-    b::location('https://github.com/traviskuhl/bolt/raw/3.0/build/bolt-latest.tar.gz');
+    b::location('https://github.com/traviskuhl/bolt/raw/3.0/build/latest/bolt-latest.tar.gz');
+});
+
+b::route('download/phar', function(){
+    b::location('https://github.com/traviskuhl/bolt/raw/3.0/build/latest/bolt.phar');
+});
+
+b::route('github', function(){
+    b::location("https://github.com/traviskuhl/bolt/");
+});
+
+b::route('docs', function(){
+    b::location("https://github.com/traviskuhl/bolt/wiki");
 });
