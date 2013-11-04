@@ -10,16 +10,11 @@ class site extends \bolt\browser\controller\request {
     ];
 
     public function get() {
-        return $this->view("page.hbr");
+        return $this->view(__DIR__."/page.hbr");
     }
 
 }
 
-// b::route('*', function(){
-//     return b::render(array(
-//         'file' => __DIR__.'/layout.template.php'
-//     ));
-// });
 
 // b::route('install', function(){
 //     b::location("https://raw.github.com/traviskuhl/bolt/3.0/build/install");

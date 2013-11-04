@@ -1,42 +1,42 @@
-
-
 {
-
     "name": "bolt/hq",
     "version": "0.1",
-
-    "dependencies": [
-
-    ],
-
+    "dependencies": [],
     "build": {
         "compile": true,
-
         "dir": [
-            [ "/usr/share/pear/bolthq/"],
+            [
+                "/usr/share/pear/bolthq/"
+            ]
         ],
-
         "find": [
-            ["/usr/share/pear/bolthq/", "./src", "*.php"],
+            [
+                "/usr/share/pear/bolthq/",
+                "./src",
+                "*.php"
+            ]
         ],
-
         "file": [
-            ["/etc/nginx/conf.d/", "./conf/bolthq.conf"],
-            ["/etc/nginx/conf.d/", "./conf/bolthq.pear.conf"],
-            ["/etc/httpd/conf.d/", "./conf/bolthq.httpd.conf"]
+            [
+                "/etc/nginx/conf.d/",
+                "./conf/bolthq.conf"
+            ],
+            [
+                "/etc/nginx/conf.d/",
+                "./conf/bolthq.pear.conf"
+            ],
+            [
+                "/etc/httpd/conf.d/",
+                "./conf/bolthq.httpd.conf"
+            ]
         ],
-
         "directories": {
             "load": [
                 "/usr/share/pear/bolthq/"
             ]
         }
-
     },
-
-    "config": {
-    },
-
+    "config": {},
     "directories": {
         "root": "src",
         "load": [
